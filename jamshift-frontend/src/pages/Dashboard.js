@@ -8,7 +8,7 @@ import Posts from "../components/Posts";
 export default function Dashboard() {
   return (
     <div>
-        <Header />
+        <Header currentPage="Home"/>
         <Navbar />
         <div className="stats">
             <StatsCard title="Acces your Payslips" value={payslips_banner} />
