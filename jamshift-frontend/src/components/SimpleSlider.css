@@ -1,0 +1,14 @@
+.slider-container {
+  width: 80%;
+  margin: auto;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.slider-image {
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+}

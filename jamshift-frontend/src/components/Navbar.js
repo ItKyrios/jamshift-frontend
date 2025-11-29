@@ -1,6 +1,8 @@
 import React from "react";
 import "./Navbar.css";
-import { FaHome, FaCalendar, MdMessage, FaBell, TiThMenu } from "react-icons/fa";
+import { FaHome, FaCalendar, FaBell } from "react-icons/fa";
+import { MdMessage } from "react-icons/md";
+import { TiThMenu } from "react-icons/ti";
 
 export default function Navbar() {
   return (
