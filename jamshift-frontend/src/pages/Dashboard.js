@@ -4,6 +4,7 @@ import ShiftPreview from "../components/ShiftPreview";
 import Post from "../components/Post";
 import SimpleSlider from "../components/SimpleSlider";
 
+
 export default function Dashboard() {
   const idealhours_banner = "https://placehold.co/300x200.png";
   const availability_banner = "https://placehold.co/300x200.png";
