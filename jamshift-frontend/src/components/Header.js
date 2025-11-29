@@ -4,7 +4,7 @@ import "./Header.css";
 
 export default function Header({ currentPage }) {
   return (
-    <header className="header">
+    <header className="header-container">
       <div className="page-title">{currentPage}</div>
       <div className="top-menu">
         <div className="dropdown">
