@@ -6,7 +6,7 @@
     margin: auto;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 4px;
     background-color: white;
     margin-bottom: 20px;
     text-align: center;
@@ -19,6 +19,7 @@
 .post-title > hr {
     margin-left: -20px;
     margin-right: -20px;
+    border-top: whitesmoke 1px solid;
 }
 
 .post-user-info {
