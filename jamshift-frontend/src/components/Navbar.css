@@ -17,6 +17,7 @@
     margin: 0;
     padding: 10px 0;
     display: flex;
+    color: lightgray;
 }
 
 .navbar ul li span {
@@ -24,19 +25,30 @@
     font-weight: 600;
     display: block;
     margin-top: -4px;
-    color: #575757;
     text-align: center;
 }
 
 .navbar a {
-    color: #575757;
     text-align: center;
     padding: 14px 26px;
     text-decoration: none;
     font-size: 22px;
+    color: lightgray;
+}
+
+.navbar ul li {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.navbar ul li:hover {
+    color: #575757;
 }
 
 .navbar a:hover {
-    background-color: #575757;
-    color: white;
+    color: #575757;
+}
+
+.active-link {
+    color: #575757;
 }

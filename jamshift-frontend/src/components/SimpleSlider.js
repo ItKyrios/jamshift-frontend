@@ -17,7 +17,7 @@ function SimpleSlider({ titles, images }) {
       <Slider {...settings}>
         {images.map((img, index) => (
         <div className="slider-content" key={index}>
-          <h3 className="slider-title">{titles[index]}</h3>
+          <span className="slider-title">{titles[index]}</span>
           <img className="slider-image" src={img} alt={`slide-${index}`} />
         </div>
       ))}
