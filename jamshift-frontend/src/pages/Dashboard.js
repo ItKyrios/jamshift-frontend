@@ -3,7 +3,6 @@ import ShiftPreview from "../components/ShiftPreview";
 import Post from "../components/Post";
 import SimpleSlider from "../components/SimpleSlider";
 import ClockPunchPreview from "../components/ClockPunchPreview";
-import Navbar from "../components/Navbar";
 
 
 export default function Dashboard() {
@@ -19,7 +18,6 @@ export default function Dashboard() {
 
   return (
     <div>
-        <Navbar />
         <Header currentPage="Home"/>
         <div className="stats">
             <SimpleSlider images={statsData.map(item => item.value)} titles={statsData.map(item => item.title)} />

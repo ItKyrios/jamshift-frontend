@@ -10,27 +10,27 @@ export default function Navbar() {
     <nav className="navbar">
       <ul>
         <li>
-          <NavLink to="/dashboard" activeStyle = {{ color: "#575757" }}><FaHome />
+          <NavLink to="/dashboard" style={({isActive}) => isActive ? { color: "#575757" } : undefined}><FaHome />
           </NavLink>
           <span>Home</span>
         </li>
         <li>
-          <NavLink to="/shifts" activeStyle = {{ color: "#575757" }}><FaCalendar />
+          <NavLink to="/shifts" style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}}><FaCalendar />
           </NavLink>
           <span>Schedule</span>
         </li>
         <li>
-          <NavLink to="/messages" activeStyle = {{ color: "#575757" }}><MdMessage />
+          <NavLink to="/messages" style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}}><MdMessage />
           </NavLink>
           <span>Messages</span>
         </li>
         <li>
-          <NavLink to="/notifications" activeStyle = {{ color: "#575757" }}><FaBell />
+          <NavLink to="/notifications" style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}}><FaBell />
           </NavLink>
           <span>Notifications</span>
         </li>
         <li>
-          <NavLink to="/more" activeStyle = {{ color: "#575757" }}><TiThMenu />
+          <NavLink to="/more" style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}}><TiThMenu />
           </NavLink>
           <span>More</span>
         </li>
