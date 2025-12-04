@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import ShiftPreview from "../components/ShiftPreview";
 import Post from "../components/Post";
 import SimpleSlider from "../components/SimpleSlider";
@@ -18,7 +17,6 @@ export default function Dashboard() {
 
   return (
     <div>
-        <Header currentPage="Home"/>
         <div className="stats">
             <SimpleSlider images={statsData.map(item => item.value)} titles={statsData.map(item => item.title)} />
         </div>

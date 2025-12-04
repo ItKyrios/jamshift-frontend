@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="navbar">
       <ul>
         <li>
-          <NavLink to="/dashboard" style={({isActive}) => isActive ? { color: "#575757" } : undefined}><FaHome />
+          <NavLink to="/" exact style={({isActive}) => isActive ? { color: "#575757" } : undefined}><FaHome />
           </NavLink>
           <span>Home</span>
         </li>
