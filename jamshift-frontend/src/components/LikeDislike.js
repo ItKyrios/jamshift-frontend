@@ -42,8 +42,8 @@ export default function LikeDislike({initialLikes, initialDislikes, onLike, onDi
     }
     return (
         <div>
-            <button onClick={handleLike} className='like-button'><AiOutlineLike /> {likes}</button>
-            <button onClick={handleDislike} className='dislike-button'><AiOutlineDislike /> {dislikes}</button>
+            <button onClick={handleLike} className={`like-button ${hasLiked ? 'liked' : ''}`}><AiOutlineLike /> {likes}</button>
+            <button onClick={handleDislike} className={`dislike-button ${hasDisliked ? 'disliked' : ''}`}><AiOutlineDislike /> {dislikes}</button>
         </div>
     );
 }

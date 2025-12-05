@@ -104,5 +104,13 @@
     border-radius: 4px;
 }
 
+.liked {
+    color: dodgerblue;
+}
+
+.disliked {
+    color: red;
+}
+
 
 
