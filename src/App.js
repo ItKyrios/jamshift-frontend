@@ -6,7 +6,6 @@ import Shifts from "./pages/Shifts";
 import Messages from "./pages/Messages";
 import Notifications from "./pages/Notifications";
 import More from "./pages/More";
-import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 

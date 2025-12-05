@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import "./ShiftPreview.css";
 import { LuCalendarClock } from "react-icons/lu"; 
 import { CiLocationOn } from "react-icons/ci";

@@ -1,4 +1,3 @@
-import React from "react";
 import { CgProfile, CgMenuGridR } from "react-icons/cg";
 import "./Header.css";
 

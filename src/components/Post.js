@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import "./Post.css";
 import { IoIosMore } from "react-icons/io";
 import { AiOutlineComment } from "react-icons/ai";

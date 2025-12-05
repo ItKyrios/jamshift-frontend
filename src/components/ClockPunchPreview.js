@@ -1,4 +1,3 @@
-import React from "react";
 import "./ClockPunchPreview.css";
 import { LuAlarmClock } from "react-icons/lu";
 

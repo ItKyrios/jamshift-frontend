@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { FaHome, FaCalendar, FaBell } from "react-icons/fa";
