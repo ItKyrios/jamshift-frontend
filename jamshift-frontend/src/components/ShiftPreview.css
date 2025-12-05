@@ -1,0 +1,44 @@
+.shiftPreview-card-component {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+    width: 80%;
+    margin: auto;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.shiftPreview-card-component div {
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shiftPreview-card-header {
+    align-self: flex-end;
+    margin-right: auto;
+    font-weight: 600;
+}
+
+.shiftPreview-shift-details {
+    align-self: center;
+    margin-right: auto;
+    font-weight: 600;
+}
+
+.shiftPreview-shift-location {
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+.shiftPreview-card-icon {
+    font-size: 5rem;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+}
