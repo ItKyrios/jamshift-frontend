@@ -1,7 +1,8 @@
-import React, {use, useState} from "react";
+import {useEffect, useState} from "react";
 import "./Post.css";
 import { IoIosMore } from "react-icons/io";
-import { AiOutlineLike, AiOutlineDislike, AiOutlineComment } from "react-icons/ai";
+import { AiOutlineComment } from "react-icons/ai";
+import LikeDislike from "./LikeDislike";
 
 export default function Post() {
     const [postData, setPostData] = useState([{
@@ -11,7 +12,7 @@ export default function Post() {
         content: "This is an example of a post content. It can include text, images, or other media.",
         imageUrl: "https://placehold.co/400x300.png",
         userAvatar: "https://placehold.co/30x30.png",
-        comments: [],
+        comments: ["lorem ipsum", "dolor sit amet"],
         likes: 0,
         dislikes: 0
     },
@@ -22,7 +23,7 @@ export default function Post() {
         content: "This is another example of a post content. It can include text, images, or other media.",
         imageUrl: "https://placehold.co/400x300.png",
         userAvatar: "https://placehold.co/30x30.png",
-        comments: [],
+        comments: ["dolor sit amet consectetur"],
         likes: 5,
         dislikes: 1
     },
@@ -33,10 +34,18 @@ export default function Post() {
         content: "This is yet another example of a post content. It can include text, images, or other media.",
         imageUrl: "",
         userAvatar: "https://placehold.co/30x30.png",
-        comments: [],
+        comments: ["lorem ipsum dolor sit amet consectetur adipiscing elit", "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", "ut enim ad minim veniam"],
         likes: 10,
         dislikes: 2
     }]);
+
+    const handleLike = (index) => {
+        console.log("Like clicked for post index:", index);
+    }
+
+    const handleDislike = (index) => {
+        console.log("Dislike clicked for post index:", index);
+    }
     return (
         <div>
             {postData.map((post, index) => (
@@ -58,10 +67,18 @@ export default function Post() {
                         <div className="image-content">
                             {post.imageUrl && <img src={post.imageUrl} alt="Post Visual Content" />}
                         </div>
+                        <div className="number-of-comments">
+                            {(post.comments.length === 1) ? `${post.comments.length} Comment` :
+                            `${post.comments.length} Comments`}
+                        </div>
                     </div>
                     <div className="post-actions">
-                        <button className="like-button"><AiOutlineLike /> {post.likes} </button>
-                        <button className="dislike-button"><AiOutlineDislike /> {post.dislikes} </button>
+                        <LikeDislike 
+                            initialLikes={post.likes} 
+                            initialDislikes={post.dislikes} 
+                            onLike={() => handleLike(index)} 
+                            onDislike={() => handleDislike(index)} 
+                        />
                         <button className="comment-button"><AiOutlineComment /> Comment</button>
                     </div>
                 </div>

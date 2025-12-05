@@ -10,29 +10,34 @@ export default function Navbar() {
     <nav className="navbar">
       <ul>
         <li>
-          <NavLink to="/" exact style={({isActive}) => isActive ? { color: "#575757" } : undefined}><FaHome />
+          <NavLink to="/" exact style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}} className={'nav-link'}>
+            <FaHome />
+            <span className="nav-label">Home</span>
           </NavLink>
-          <span>Home</span>
         </li>
         <li>
-          <NavLink to="/shifts" style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}}><FaCalendar />
+          <NavLink to="/shifts" style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}} className={'nav-link'}>
+            <FaCalendar />
+            <span className="nav-label">Schedule</span>
           </NavLink>
-          <span>Schedule</span>
         </li>
         <li>
-          <NavLink to="/messages" style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}}><MdMessage />
+          <NavLink to="/messages" style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}} className={'nav-link'}>
+            <MdMessage />
+            <span className="nav-label">Messages</span>
           </NavLink>
-          <span>Messages</span>
         </li>
         <li>
-          <NavLink to="/notifications" style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}}><FaBell />
+          <NavLink to="/notifications" style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}} className={'nav-link'}>
+            <FaBell />
+            <span className="nav-label">Notifications</span>
           </NavLink>
-          <span>Notifications</span>
         </li>
         <li>
-          <NavLink to="/more" style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}}><TiThMenu />
+          <NavLink to="/more" style={({isActive}) => isActive ? { color: "#575757" } : {color: "lightgray"}} className={'nav-link'}>
+            <TiThMenu />
+            <span className="nav-label">More</span>
           </NavLink>
-          <span>More</span>
         </li>
       </ul>
     </nav>
