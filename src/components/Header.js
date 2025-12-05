@@ -7,8 +7,8 @@ export default function Header({ currentPage }) {
       <div className="header-left-content">JamShift</div>
       <div className="header-center-content">{currentPage}</div>
       <div className="header-right-content">
-        <a href="#"><CgMenuGridR /></a>
-        <a href="#"><CgProfile /></a>
+        <a href="/"><CgMenuGridR /></a>
+        <a href="/"><CgProfile /></a>
       </div>
     </header>
   );

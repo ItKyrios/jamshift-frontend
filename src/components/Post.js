@@ -5,7 +5,7 @@ import { AiOutlineComment } from "react-icons/ai";
 import LikeDislike from "./LikeDislike";
 
 export default function Post() {
-    const [postData, setPostData] = useState([{
+    const [postData] = useState([{
         title: "Post Title",
         username: "Username",
         timestamp: "June 10, 2024",
