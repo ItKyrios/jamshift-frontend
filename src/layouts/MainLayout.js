@@ -6,7 +6,7 @@ export default function MainLayout() {
   return (
     <div className="main-container">
         {/* Top header */}
-        <Header currentPage="Home" />
+        <Header />
 
         {/* Bottom navigation */}
         <Navbar />

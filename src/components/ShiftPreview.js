@@ -5,8 +5,8 @@ import { CiLocationOn } from "react-icons/ci";
 
 export default function ShiftPreview() {
     const [shift] = useState({
-        startTime: "2025-12-06T13:30:00",
-        endTime: "2025-12-06T21:30:00",
+        startTime: "2025-12-19T13:30:00",
+        endTime: "2025-12-19T21:30:00",
         location: "123 Main St, Springfield",
     });
     
